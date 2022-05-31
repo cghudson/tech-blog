@@ -1,5 +1,3 @@
-// model must contain username and password
-
 const sequelize = require('../config/config')
 const { Model, DataTypes } = require('sequelize');
 const bcrypt = require('bcrypt');

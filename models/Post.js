@@ -1,4 +1,3 @@
-//model for posts - title and contets
 const sequelize = require("../config/config");
 const { Model, DataTypes } = require("sequelize");
 

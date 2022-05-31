@@ -1,4 +1,3 @@
-//comments - comment text
 const sequelize = require("../config/config");
 const { Model, DataTypes } = require("sequelize");
 
