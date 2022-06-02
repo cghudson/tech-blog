@@ -104,7 +104,7 @@ The following GIF demonstrates the Tech Blog's appearance and functionality:
 
 ## Deployed Application
 
-Click [here]() to view the deployed applicaiton on Heroku.
+Click [here](https://carolyn-tech-blog.herokuapp.com/) to view the deployed applicaiton on Heroku.
 
 ## License
 
