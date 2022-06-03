@@ -76,7 +76,6 @@ router.get("/:id", async (req, res) => {
 });
 
 // CREATE new post
-//does not work
 router.post("/", withAuth, async (req, res) => {
   try {
     const dbPostData = await Post.create({

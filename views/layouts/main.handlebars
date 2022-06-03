@@ -13,17 +13,38 @@
 
 <body>
     <header>
-        <nav>
-            <a>TECH BLOG</a>
+        <nav class="navbar navbar-dark bg-primary p-3">
+            <a class="navbar-brand" href="#">TECH BLOG</a>
             <div>
-                <a class="link" href="/">Home</a>
-                <a class="link" href="/dashboard">Dashboard</a>
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="/">Home</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="/dashboard">Dashboard</a>
+                    </li>
+                </ul>
                 {{#if loggedIn}}
-                <a class="link" id="logout" href="/logout">Logout</a>
-                <a class="link" href="/dashboard/create">New Post</a>
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" id="logout" href="/logout">Logout</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="/dashboard/create">New Post</a>
+                    </li>
+                </ul>
                 {{else}}
-                <a class="link" href="/login">Login</a>
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="/login">Login</a>
+                    </li>
+                </ul>
                 {{/if}}
+
             </div>
         </nav>
 
@@ -33,9 +54,9 @@
         {{{ body }}}
     </main>
 
-{{#if loggedIn}}
-<script src="/javascript/logout.js"></script>
-{{/if}}
+    {{#if loggedIn}}
+    <script src="/javascript/logout.js"></script>
+    {{/if}}
 
 </body>
 
