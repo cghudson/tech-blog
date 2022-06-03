@@ -6,11 +6,11 @@ const commentData = [
         post_id: 2,
         comment_text: "This has been a very helpful tool!"
     },
-    // {
-    //     user_id: 2,
-    //     post_id: 7,
-    //     comment_text: "Awesome work!"
-    // },
+    {
+        user_id: 2,
+        post_id: 7,
+        comment_text: "Awesome work!"
+    },
     {
         user_id: 3,
         post_id: 1,
