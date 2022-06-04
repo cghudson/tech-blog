@@ -14,38 +14,41 @@
 <body>
     <header>
         <nav class="navbar navbar-dark bg-primary p-3">
-            <a class="navbar-brand" href="#">TECH BLOG</a>
-            <div>
-                <ul class="navbar-nav mr-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="/">Home</a>
-                    </li>
-                </ul>
-                <ul class="navbar-nav mr-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="/dashboard">Dashboard</a>
-                    </li>
-                </ul>
-                {{#if loggedIn}}
-                <ul class="navbar-nav mr-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link" id="logout" href="/logout">Logout</a>
-                    </li>
-                </ul>
-                <ul class="navbar-nav mr-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="/dashboard/create">New Post</a>
-                    </li>
-                </ul>
-                {{else}}
-                <ul class="navbar-nav mr-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="/login">Login</a>
-                    </li>
-                </ul>
-                {{/if}}
+            <div class="container-fluid">
+                <a class="display-1" id="header" href="/"><strong>TECH BLOG</strong></a>
+                <div>
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="/">Home</a>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="/dashboard">Dashboard</a>
+                        </li>
+                    </ul>
+                    {{#if loggedIn}}
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" id="logout" href="/logout">Logout</a>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="/dashboard/create">New Post</a>
+                        </li>
+                    </ul>
+                    {{else}}
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="/login">Login</a>
+                        </li>
+                    </ul>
+                    {{/if}}
 
+                </div>
             </div>
+
         </nav>
 
     </header>
