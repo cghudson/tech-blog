@@ -43,7 +43,6 @@ router.get("/post/:id", async (req, res) => {
       where: {
         id: req.params.id,
       },
-
       include: [
         User,
         {
@@ -57,7 +56,6 @@ router.get("/post/:id", async (req, res) => {
       return;
     }
     const post = dbPostData.get({ plain: true });
-    console.log(post);
     res.render("single-post", { post, loggedIn: req.session.loggedIn });
   } catch (err) {
     console.log(err);

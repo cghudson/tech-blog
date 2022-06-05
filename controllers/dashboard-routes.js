@@ -1,6 +1,5 @@
 const router = require("express").Router();
-const sequelize = require("../config/config");
-const { Post, User, Comment } = require("../models");
+const { Post } = require("../models");
 const withAuth = require("../utils/auth");
 
 // GET all user posts for dashboard
@@ -20,7 +19,7 @@ router.get("/", withAuth, async (req, res) => {
   }
 });
 
-// GET user post datato edit
+// GET user post data to edit
 router.get("/edit/:id", async (req, res) => {
   try {
     const dbPostData = await Post.findOne({
@@ -33,7 +32,6 @@ router.get("/edit/:id", async (req, res) => {
       return;
     }
     const post = dbPostData.get({ plain: true });
-    console.log(post);
     res.render("edit-post", { post, loggedIn: req.session.loggedIn });
   } catch (err) {
     console.log(err);
@@ -42,7 +40,7 @@ router.get("/edit/:id", async (req, res) => {
 });
 
 // CREATE new post
-router.get("/create", (req, res) => {
+router.get("/create", withAuth, (req, res) => {
   res.render("create-post");
 });
 
