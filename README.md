@@ -98,9 +98,13 @@ To run application on local server:
 
 ## Preview:
 
-The following GIF demonstrates the Tech Blog's appearance and functionality:
+The following images demonstrate the Tech Blog's appearance and functionality:
 
-![GIF of application functionallity]()
+![image of homepage](./public/assets/homepage.jpg)
+![image of login](./public/assets/login.jpg)
+![image of new post page](./public/assets/create-post.jpg)
+![image of edit post page](./public/assets/edit-post.jpg)
+![image of comment](./public/assets/comment.jpg)
 
 ## Deployed Application
 
