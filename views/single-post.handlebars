@@ -1,8 +1,9 @@
 <div class="card m-3">
-    <h1 class="card-header">{{post.title}}</h1>
+    <h3 class="card-header">{{post.title}}</h3>
     <section class="card-body">{{post.post_content}}</section>
     <div class="card-text text-end p-2">
-        <p><em>Posted by: {{user.username}} on {{format_date createdAt}}</em></p>  
+        {{!-- need to fix --}}
+        <p><em>- {{user.username}}, {{format_date createdAt}}</em></p> 
     </div>
 </div>
 

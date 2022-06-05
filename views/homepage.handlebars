@@ -2,11 +2,11 @@
 
     {{#each posts }}
     <article class="card m-3">
-        <h1 class="card-header">{{title}}</h1>
+        <h3 class="card-header">{{title}}</h3>
         <section class="card-body">{{post_content}}</section>
-        <h4 class="card-text text-end p-2">
+        <h6 class="card-text text-end p-2">
             <p><em>Posted on: {{format_date createdAt}}</em></p>
-        </h4>
+        </h6>
         <div class="d-grid gap-2 d-md-block mb-3">
             <button type="button" class="btn btn-primary m-2"><a href="/post/{{id}}">View Post</a></button>
         </div>

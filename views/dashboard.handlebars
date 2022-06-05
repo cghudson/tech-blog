@@ -3,10 +3,10 @@
 
   {{#each posts}}
   <div class="card m-3">
-    <h1 class="card-header">{{title}}</h1>
+    <h3 class="card-header">{{title}}</h3>
     <section class="card-text m-2">{{post_content}}</section>
     <div class="d-grid gap-2 d-md-block m-3">
-      <a href="/dashboard/edit/{{id}}" class="btn btn-primary text-end p-2">Edit Post</a>
+      <a href="/dashboard/edit/{{id}}" class="btn btn-primary text-center p-2">Edit Post</a>
     </div>
   </div>
   {{/each}}
@@ -14,5 +14,5 @@
 </section>
 
 <div class="d-grid gap-2 d-md-block mb-3">
-  <button type="button" class="btn btn-primary m-2"><a href="/dashboard/create">Add a new post!</a></button>
+  <button type="button" class="btn btn-primary m-2"><a href="/dashboard/create"> + Add a new post!</a></button>
 </div>
