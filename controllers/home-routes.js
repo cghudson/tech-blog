@@ -37,6 +37,7 @@ router.get("/signup", (req, res) => {
 });
 
 // GET single user post
+//need to edit? username and date not displayed on single post
 router.get("/post/:id", async (req, res) => {
   try {
     const dbPostData = await Post.findOne({
@@ -44,10 +45,16 @@ router.get("/post/:id", async (req, res) => {
         id: req.params.id,
       },
       include: [
-        User,
+        {
+          model: User,
+          attributes: ["username"],
+        },
         {
           model: Comment,
-          include: [User],
+          include: {
+            model: User,
+            attributes: ["username"],
+          },
         },
       ],
     });
